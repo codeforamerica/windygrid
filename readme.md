@@ -1,4 +1,4 @@
 WindyGrid
 =========
 
-![Superduperuber Dashboard](http://github.com/codeforamerica/windygrid/raw/master/img/foo.png)
+![Superduperuber Dashboard](https://github.com/codeforamerica/windygrid/raw/master/dashboard.jpg)
