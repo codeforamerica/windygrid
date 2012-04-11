@@ -206,7 +206,8 @@ header section#superdate p {
 }
 
 header section#superdate p.time {
-  
+  line-height: 20px;
+  background: url("../img/clock.png") no-repeat top center;
 }
 
 div#main {
@@ -224,24 +225,45 @@ h1.section-title {
   letter-spacing: 1px;
 }
 
+/** Section Backgrounds **/
+section#conditions h1.section-title {
+  background: url("../img/cloud.png") no-repeat 98% bottom #fbbd37;
+  
+}
+section#news h1.section-title {
+    background: url("../img/newspaper.png") no-repeat 95% bottom #fbbd37;
+}
+
+section#twitter h1.section-title {
+    background: url("../img/twitter_bird.png") no-repeat 95% bottom #fbbd37;
+}
+
+section#nineoneone h1.section-title {
+    background: url("../img/phone.png") no-repeat 98% bottom #fbbd37;
+}
+
+
 div#main section {
   margin-bottom: 20px;
 }
 
 section#launchmap a {
   margin: 0px 0 20px;
-  padding: 20px;
-  background: #ff0000;
+  padding: 20px 20px 20px 50px;
+  background: ;
   float: right;
   color: #fff;
   font-size: 20px;
   text-transform: uppercase;
   border-radius: 10px;
+  background: #ff0000 url("../img/map_marker.png") no-repeat 20px center;
 }
 
 section#launchmap a:hover {
-  background: #FC5E5E;
+  background-color: #FC5E5E;
 }
+
+
 
 
 section#conditions {
