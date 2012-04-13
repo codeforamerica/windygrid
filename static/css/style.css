@@ -152,6 +152,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 
 body {
   background: #f5f5f5 url('../img/grid.png') left top;
+  font-family: 'Lato', 'Trebuchet MS', 'Helvetica Neue', sans-serif;
 }
 
 header#header {
@@ -159,7 +160,7 @@ header#header {
   width: 100%;
   background: #4ebfef ;
   color: #000;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
   font-weight: bold;
   
 }
@@ -221,6 +222,7 @@ h1.section-title {
   background-color: #fbbd37;
   padding: 10px;
   font-size: 16px;
+  font-style: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -249,22 +251,32 @@ div#main section {
 
 section#launchmap a {
   margin: 0px 0 20px;
-  padding: 20px 20px 20px 50px;
-  background: ;
+  padding: 15px 35px 20px 65px;
+  height: 20px;
   float: right;
   color: #fff;
   font-size: 20px;
+  font-style: 700;
   text-transform: uppercase;
-  border-radius: 10px;
-  background: #ff0000 url("../img/map_marker.png") no-repeat 20px center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  border: solid #c62e3c 2px;
+  background: url("../img/map_marker.png") no-repeat 35px center, -webkit-gradient(linear, 0 0, 0 100%, from(#c62e3c), to(#d1414f));
+  background: url("../img/map_marker.png") no-repeat 35px center, -moz-linear-gradient(top, #c62e3c, #d1414f);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#c62e3c, endColorStr=#d1414f);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#c62e3c, endColorStr=#d1414f);
+  display:inline-block; /* IE is so silly */
 }
 
 section#launchmap a:hover {
-  background-color: #FC5E5E;
+	background: url("../img/map_marker.png") no-repeat 35px center, -webkit-gradient(linear, 0 0, 0 100%, from(#d1414f), to(#c62e3c));
+	background: url("../img/map_marker.png") no-repeat 35px center, -moz-linear-gradient(top, #d1414f, #c62e3c);
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#d1414f, endColorStr=#c62e3c);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#d1414f, endColorStr=#c62e3c);
+	display:inline-block; /* IE is so silly */
 }
-
-
-
 
 section#conditions {
   clear: both;
@@ -289,7 +301,7 @@ section#nineoneone {
 }
 
 section div.section-wrapper {
-  margin: 10px;
+  margin: 23px 10px 10px 10px;
 }
 
 div.section-wrapper h2 {
@@ -314,6 +326,7 @@ article header p {
 
 article header p {
   font-style: italic;
+  color: #adaeaf;
 }
 
 section#twitter article a.author {
