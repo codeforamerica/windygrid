@@ -153,6 +153,7 @@ mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: b
 body {
   background: #f5f5f5 url('../img/grid.png') left top;
   font-family: 'Lato', 'Trebuchet MS', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
 }
 
 header#header {
@@ -251,12 +252,10 @@ div#main section {
 
 section#launchmap a {
   margin: 0px 0 20px;
-  padding: 15px 35px 20px 65px;
-  height: 20px;
+  padding: 15px 35px 16px 65px;
   float: right;
   color: #fff;
   font-size: 20px;
-  font-style: 700;
   text-transform: uppercase;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -335,6 +334,12 @@ section#twitter article a.author {
 
 section#twitter article p.meta {
   font-style: italic;
+}
+
+#twitter-search-keyword,
+#twitter-search-date {
+	height: 25px;
+	margin-bottom: 5px;
 }
 
 section#nineoneone table {
