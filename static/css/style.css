@@ -358,6 +358,10 @@ section#twitter article p.meta {
 	margin-bottom: 5px;
 }
 
+#twitter-search-date {
+	width: 108px;
+}
+
 input.search-button {
 	margin-top: 5px;
   padding: 3px 15px;
