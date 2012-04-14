@@ -178,11 +178,18 @@ header h1#site-title {
   width: 246px;
   height: 72px;
   background: #fff url('../img/logo.png') no-repeat left top;
-  border: 1px solid #aaa;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top: none;
-  box-shadow: 0 3px 1px #888;
+	background-color: rgb(68,68,68); /* Needed for IEs */
+
+	-moz-box-shadow: -3px 3px 3px rgba(68,68,68,0.3);
+	-webkit-box-shadow: -3px 3px 3px rgba(68,68,68,0.3);
+	box-shadow: -3px 3px 3px rgba(68,68,68,0.3);
+
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+	zoom: 1;
 }
 
 header section#loginout {
@@ -215,7 +222,7 @@ header section#superdate p.time {
 
 div#main {
   width: 820px;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
 }
 
 h1.section-title {
@@ -355,10 +362,14 @@ section#twitter article p.meta {
 #twitter-search-keyword,
 #twitter-search-date {
 	height: 25px;
-	margin-bottom: 5px;
+	margin: 5px 0px 10px 0px;
 }
 
-#twitter-search-date {
+label {
+	margin-bottom: 7px;
+}
+
+input#twitter-search-date {
 	width: 108px;
 }
 
